@@ -38,3 +38,17 @@ body {
   margin-top: 15px;
   cursor: pointer;
 }
+
+.update-user{
+  padding: 15px;
+  text-align: center;
+
+}
+.update-user label{
+  display: block;
+}
+
+.btn-save{
+  margin-top: 15px;
+  cursor: pointer;
+}
