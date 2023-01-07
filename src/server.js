@@ -8,9 +8,13 @@ require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 8080;
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 // setup view env
 configViewEngine(app);
 initWebRoute(app);
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
